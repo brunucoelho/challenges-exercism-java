@@ -1,0 +1,19 @@
+# Compilados
+*.class
+*.jar
+*.war
+bin/
+build/
+target/
+
+# IDEs
+.idea/
+*.iml
+.settings/
+.project
+.classpath
+.vscode/
+
+# Sistema
+.DS_Store
+Thumbs.db
