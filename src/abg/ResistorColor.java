@@ -1,3 +1,4 @@
+package abg;
 class ResistorColor {
     int colorCode(String color) {
         int value = 0;

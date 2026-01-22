@@ -1,3 +1,4 @@
+package abf;
 import java.util.*;
 
 class HighScores {

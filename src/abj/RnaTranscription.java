@@ -1,4 +1,5 @@
-class RnaTranscription {
+package abj;
+public class RnaTranscription {
 
     String transcribe(String dnaStrand) {
         StringBuilder rnaStrand = new StringBuilder();

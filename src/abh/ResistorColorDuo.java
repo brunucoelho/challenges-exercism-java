@@ -1,3 +1,4 @@
+package abh;
 class ResistorColorDuo {
 
     int value(String[] colors) {

@@ -1,3 +1,4 @@
+package abi;
 class ResistorColorTrio {
     String label(String[] colors) {
         int firstDigit = 0;
