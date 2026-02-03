@@ -1,4 +1,4 @@
-package aaaHelloWorld;
+package aa_HelloWorld;
 
 class Greeter {
 

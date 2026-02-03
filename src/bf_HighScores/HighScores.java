@@ -1,4 +1,4 @@
-package abf;
+package bf_HighScores;
 import java.util.*;
 
 class HighScores {

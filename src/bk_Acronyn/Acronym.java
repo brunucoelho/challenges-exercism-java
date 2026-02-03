@@ -1,4 +1,4 @@
-package abk;
+package bk_Acronyn;
 class Acronym {
 
     public String phrase;

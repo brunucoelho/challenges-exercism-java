@@ -1,4 +1,4 @@
-package abg;
+package bg_ResistorColor;
 class ResistorColor {
     int colorCode(String color) {
         int value = 0;

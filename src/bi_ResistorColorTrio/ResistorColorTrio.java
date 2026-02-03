@@ -1,4 +1,4 @@
-package abi;
+package bi_ResistorColorTrio;
 class ResistorColorTrio {
     String label(String[] colors) {
         int firstDigit = 0;

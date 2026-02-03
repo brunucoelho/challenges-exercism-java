@@ -1,4 +1,4 @@
-package abj;
+package bj_RnaTranscription;
 public class RnaTranscription {
 
     String transcribe(String dnaStrand) {
