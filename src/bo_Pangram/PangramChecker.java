@@ -1,3 +1,4 @@
+package bo_Pangram;
 public class PangramChecker {
 
     int sum = 0;
