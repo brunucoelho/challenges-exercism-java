@@ -12,6 +12,7 @@ class KindergartenGarden {
     KindergartenGarden(String garden) {
         this.garden = garden;
     }
+    
 
     List<Plant> getPlantsOfStudent(String student) {
         List<Plant> plants = new ArrayList<>();
@@ -19,15 +20,21 @@ class KindergartenGarden {
             char plant = garden.charAt(i);
             plants.add(Plant.getPlant(plant));
         }
-        //List<Plant> plantsOfStudent = new ArrayList<>();
         plants.removeIf(p -> p == null);
 
+        List<Plant> plantsOfStudent = new ArrayList<>();
 
-        // for (Plant p: plants) {
-        //     if (p != null) {
-        //         plantsOfStudent.add(p);
-        //     }
-        // }
-        return plants;
+        if (students.indexOf(student) == 0) {
+        for (int j = students.indexOf(student); j < plants.size(); j+=(plants.size()/2)) {
+            plantsOfStudent.add(plants.get(j));
+            plantsOfStudent.add(plants.get(j+1));
+        }
+    } else {
+        for (int j = students.indexOf(student); j < (plants.size()/2); j+=(plants.size()/4)) {
+            plantsOfStudent.add(plants.get(j*2));
+            plantsOfStudent.add(plants.get((j*2)+1));
+    }
+}
+return plantsOfStudent;
     }
 }
