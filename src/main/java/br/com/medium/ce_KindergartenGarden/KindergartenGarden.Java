@@ -13,7 +13,6 @@ class KindergartenGarden {
         this.garden = garden;
     }
     
-
     List<Plant> getPlantsOfStudent(String student) {
         List<Plant> plants = new ArrayList<>();
         for (int i = 0; i < garden.length(); i++) {
