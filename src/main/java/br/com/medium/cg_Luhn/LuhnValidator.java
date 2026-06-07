@@ -59,7 +59,7 @@ public class LuhnValidator {
       }
 
       //
-      rule3rd = (sum%10 == 0);
+      rule3rd = (sum % 10 == 0);
   
     return (rule1st && rule2rd && rule3rd) ? true : false;
       
