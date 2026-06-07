@@ -11,7 +11,6 @@ public class Matrix {
   }
   
   int[] getRow(int rowNumber) {
-
     String[] element = matrixAsString.split("\n");
 
         String[] matrixAsStringList = new String[element.length];
@@ -29,10 +28,25 @@ public class Matrix {
         }
 
         return intRow;
-
   }
 
   int[] getColumn(int columnNumber) {
-      throw new UnsupportedOperationException("Delete this statement and write your own implementation.");
+    String[] element = matrixAsString.split("\n");
+
+        String[] matrixAsStringList = new String[element.length];
+        //criação da matrix e insert;
+        for (int i = 0; i < matrixAsStringList.length; i++ ) {
+            matrixAsStringList[i] = element[i];
+        }
+
+        int[] intColumn = new int[element.length];
+
+        for (int j = 0; j < element.length; j++) {
+            String[] stringsDeNumeros = matrixAsStringList[j].split(" ");
+
+            intColumn[j] = Integer.parseInt(stringsDeNumeros[columnNumber - 1]);
+        }
+
+      return intColumn;
   }
 }
