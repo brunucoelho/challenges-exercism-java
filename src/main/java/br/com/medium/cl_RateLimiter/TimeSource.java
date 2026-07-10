@@ -3,9 +3,6 @@ package main.java.br.com.medium.cl_RateLimiter;
 import java.time.Duration;
 import java.time.Instant;
 
-/**
- * NOTE: There is no need to change this file and is treated as read only by the Exercism test runners.
- */
 public class TimeSource {
     private Instant now;
 

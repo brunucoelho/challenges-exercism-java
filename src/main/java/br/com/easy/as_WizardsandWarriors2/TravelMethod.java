@@ -1,4 +1,4 @@
-package main.java.br.com.easy.as_WizardsandWarriors2;
+package main.java.br.com.easy.as_WizardSandWarriors2;
 
 public enum TravelMethod {
     WALKING,

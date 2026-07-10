@@ -1,6 +1,6 @@
-package main.java.br.com.easy.as_WizardsandWarriors2;
+package main.java.br.com.easy.as_WizardSandWarriors2;
 
-public class Destinations {
+public class Destination {
     private String name;
     private int inhabitants;
 
