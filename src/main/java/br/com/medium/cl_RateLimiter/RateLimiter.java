@@ -9,6 +9,7 @@ public class RateLimiter<K> {
     long seconds;
     Duration windowSize = Duration.ofNanos(seconds);
     TimeSource timeSource = new TimeSource(Instant.now());
+    K[] clients = (K[]) new Object[3];
     
 
     public RateLimiter(int limit, Duration windowSize, TimeSource timeSource) {
@@ -18,7 +19,7 @@ public class RateLimiter<K> {
     }
 
     public boolean allow(K clientId) {
-        
+        return true;
     }
 }
 

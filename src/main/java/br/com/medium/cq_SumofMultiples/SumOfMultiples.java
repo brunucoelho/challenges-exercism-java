@@ -1,8 +1,5 @@
 package main.java.br.com.medium.cq_SumofMultiples;
 
-import java.util.HashSet;
-import java.util.Set;
-
 public class SumOfMultiples {
 
   int number;
@@ -15,16 +12,16 @@ public class SumOfMultiples {
   
   int getSum() {
     int sum = 0;
-    Set<Integer> numbers = new HashSet<>();
-    for (int i : set) {
-          for (int j = i; j < number; j += i) {
-              numbers.add(j);
-          }
-      }
-    for (int numberSet : numbers) {
-      sum += numberSet;
+
+    for (int i = 1; i < number; i++) {
+        for (int divisor : set) {
+            if (divisor != 0 && i % divisor == 0) {
+                sum += i;
+                break;
+            }
+        }
     }
-    
+
     return sum;
 
 }
