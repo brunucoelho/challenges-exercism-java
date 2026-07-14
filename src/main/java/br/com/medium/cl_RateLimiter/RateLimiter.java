@@ -2,6 +2,8 @@ package main.java.br.com.medium.cl_RateLimiter;
 
 import java.time.Duration;
 import java.time.Instant;
+import java.util.HashMap;
+import java.util.Map;
 
 public class RateLimiter<K> {
 
@@ -9,8 +11,7 @@ public class RateLimiter<K> {
     long seconds;
     Duration windowSize = Duration.ofNanos(seconds);
     TimeSource timeSource = new TimeSource(Instant.now());
-    K[] clients = (K[]) new Object[3];
-    
+    Map<String, K> infoTime = new HashMap<String, K>();
 
     public RateLimiter(int limit, Duration windowSize, TimeSource timeSource) {
         this.limit = limit;
